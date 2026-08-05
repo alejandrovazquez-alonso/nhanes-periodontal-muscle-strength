@@ -1,0 +1,22 @@
+# Data (raw NHANES files, generated parquet, synthetic replicas)
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/synthetic/*
+!data/synthetic/.gitkeep
+
+# Generated figures
+results/*
+!results/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# OS
+.DS_Store
