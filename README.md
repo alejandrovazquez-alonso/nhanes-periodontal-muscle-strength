@@ -171,7 +171,6 @@ presentation, and submitted code, regardless of the tools used during developmen
 
 - [MIMIC-III AKI in-hospital mortality prediction](https://github.com/alejandrovazquez-alonso/mimic-aki-mortality-prediction)
 - [BRFSS health risk clustering & classification](#) — link to be added
-- [BPPV clinical decision support tool (React)](#) — link to be added
 
 ## License
 
