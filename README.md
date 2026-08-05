@@ -6,7 +6,7 @@ synthetic data up to 50 million records.
 
 **Authors:** Alejandro Vázquez Alonso and Daniel Vidal Silván (dentist)
 **Context:** Master's in AI and Big Data in Health, Universitat Autònoma de Barcelona (UAB) —
-Module 3, "Entornos Big Data para el análisis de datos" — Trabajo Final de Asignatura, graded 9.8/10
+
 **Infrastructure:** OpenNebula virtual machines (Debian 12, BigTop 2.0), Apache Spark local mode
 
 ## Project origin
