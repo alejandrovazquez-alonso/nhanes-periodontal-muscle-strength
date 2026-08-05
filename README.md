@@ -4,7 +4,7 @@ Big Data pipeline (Apache Spark) analyzing the association between periodontal h
 grip strength using real NHANES 2013-2014 data, with a separate scalability validation on
 synthetic data up to 50 million records.
 
-**Authors:** Alejandro Vázquez Alonso and Daniel Vidal Silván (dentist)
+**Authors:** Alejandro Vázquez Alonso and Daniel Vidal Silván 
 **Context:** Master's in AI and Big Data in Health, Universitat Autònoma de Barcelona (UAB) —
 
 **Infrastructure:** OpenNebula virtual machines (Debian 12, BigTop 2.0), Apache Spark local mode
