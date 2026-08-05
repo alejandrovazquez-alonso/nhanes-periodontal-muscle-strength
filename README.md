@@ -56,6 +56,8 @@ for the direct download URLs of all 12 tables and the full pipeline execution or
 
 ## Key clinical findings (real data, n=3,389)
 
+📊 **[See the full EDA & findings summary with figures →](docs/eda_summary.md)**
+
 - Crude correlation between periodontal attachment loss and grip strength: **r = 0.02**
   (practically null).
 - This near-null correlation is explained by strong confounding: a linear regression
@@ -115,6 +117,9 @@ nhanes-periodontal-muscle-strength/
 │   ├── 06_spark_escalabilidad.py # Spark scalability benchmark (4 scales)
 │   ├── 08a-08e_spark_*.py        # fidelity validation on 50M synthetic records (Spark)
 │   └── generar_informe.py        # builds the final PDF report (ReportLab)
+├── docs/
+│   ├── eda_summary.md            # condensed EDA + key findings, with figures
+│   └── figures/                  # key figures extracted from the original report
 ├── data/                          # not versioned — see Data access above
 │   ├── raw/                       # place downloaded .XPT files here
 │   ├── interim/                   # merged raw parquet (generated)
