@@ -158,7 +158,7 @@ description of each script's output.
 
 ## Author's note on AI assistance
 
-This project was developed with the assistance of generative AI (Claude, Anthropic) as general
+This project was developed with the assistance of generative AI , as general
 support during preparation, per the Master's program's academic integrity policy. The authors
 reviewed, validated, and assume full responsibility for the final content of the report,
 presentation, and submitted code, regardless of the tools used during development.
