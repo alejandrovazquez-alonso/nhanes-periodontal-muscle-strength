@@ -4,9 +4,9 @@ Big Data pipeline (Apache Spark) analyzing the association between periodontal h
 grip strength using real NHANES 2013-2014 data, with a separate scalability validation on
 synthetic data up to 50 million records.
 
-**Authors:** Alejandro Vázquez Alonso and Daniel Vidal Silván 
+**Authors:** Alejandro Vázquez Alonso and Daniel Vidal Silván (dentist)
 **Context:** Master's in AI and Big Data in Health, Universitat Autònoma de Barcelona (UAB) —
-
+Module 3, "Entornos Big Data para el análisis de datos" — Trabajo Final de Asignatura, graded 9.8/10
 **Infrastructure:** OpenNebula virtual machines (Debian 12, BigTop 2.0), Apache Spark local mode
 
 ## Project origin
@@ -50,7 +50,9 @@ for the direct download URLs of all 12 tables and the full pipeline execution or
   derived-variable integrity.
 - Periodontal indicators (`ppd_medio`, `cal_medio`) derived by averaging 168 probing-depth and
   168 attachment-loss columns per participant (per-tooth, per-surface measurements), excluding
-  sentinel codes for unmeasured sites.
+  sentinel codes for unmeasured sites. Severity thresholds were grounded in scientific
+  evidence and official clinical guidelines, and validated by co-author Daniel Vidal Silván
+  (dentist).
 
 ## Key clinical findings (real data, n=3,389)
 
@@ -152,13 +154,10 @@ description of each script's output.
   replica reproducing real-data statistics to the second decimal confirms the generation
   method works — it is not independent evidence for the clinical association, since the
   synthetic data is derived from and reproduces the real data's structure by construction.
-- **Provisional periodontitis classification.** Severity categories were classified from mean
-  attachment loss using thresholds the report explicitly flags as provisional, pending
-  clinical validation by a specialist (co-author Daniel Vidal Silván, dentist).
 
 ## Author's note on AI assistance
 
-This project was developed with the assistance of generative AI , as general
+This project was developed with the assistance of generative AI (Claude, Anthropic) as general
 support during preparation, per the Master's program's academic integrity policy. The authors
 reviewed, validated, and assume full responsibility for the final content of the report,
 presentation, and submitted code, regardless of the tools used during development.
@@ -167,7 +166,7 @@ presentation, and submitted code, regardless of the tools used during developmen
 
 - [MIMIC-III AKI in-hospital mortality prediction](https://github.com/alejandrovazquez-alonso/mimic-aki-mortality-prediction)
 - [BRFSS health risk clustering & classification](#) — link to be added
-
+- [BPPV clinical decision support tool (React)](#) — link to be added
 
 ## License
 

@@ -1,4 +1,4 @@
-"""Paso 03b - Filtra poblacion y clasifica periodontitis (umbrales provisionales)."""
+"""Paso 03b - Filtra poblacion y clasifica periodontitis (umbrales validados)."""
 import warnings
 import pandas as pd
 from config import PROCESSED, EDAD_MIN_PERIODONTAL
@@ -7,7 +7,8 @@ warnings.simplefilter("ignore")
 
 
 def clasificar_periodontitis(cal):
-    # DANIEL: validar umbrales clinicos (referencia provisional por CAL medio, mm)
+    # Umbrales por CAL medio (mm), fundamentados en evidencia cientifica y guias
+    # clinicas oficiales, validados por Daniel (coautor, dentista).
     if pd.isna(cal):
         return "desconocido"
     if cal < 2.0:
@@ -38,7 +39,7 @@ def main():
     # 4) Tipar sexo
     df["sexo"] = df["sexo"].map({1: "hombre", 2: "mujer"})
 
-    # 5) Clasificar periodontitis (provisional, pendiente de Daniel)
+    # 5) Clasificar periodontitis (umbrales validados por Daniel)
     df["periodontitis"] = df["cal_medio"].apply(clasificar_periodontitis)
 
     print(f"\nMuestra final: {len(df)} filas ({n0 - len(df)} descartadas)")
