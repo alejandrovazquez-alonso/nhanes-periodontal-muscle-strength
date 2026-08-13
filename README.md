@@ -170,7 +170,7 @@ presentation, and submitted code, regardless of the tools used during developmen
 ## Related work
 
 - [MIMIC-III AKI in-hospital mortality prediction](https://github.com/alejandrovazquez-alonso/mimic-aki-mortality-prediction)
-- [BRFSS health risk clustering & classification](#) — link to be added
+- [BRFSS health risk clustering & classification](https://github.com/alejandrovazquez-alonso/brfss-musculoskeletal-risk-pipeline)
 
 ## License
 
