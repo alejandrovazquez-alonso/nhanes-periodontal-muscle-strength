@@ -143,7 +143,7 @@ with tab_eda:
     st.image(
         str(FIGURES / "fig1_fuerza_periodontitis.png"),
         caption="Fuerza de prensión por severidad periodontal (datos reales)",
-        use_container_width=True,
+        width=700,
     )
     st.caption(
         "A simple vista, la fuerza parece plana entre grupos de severidad periodontal. "
@@ -154,7 +154,7 @@ with tab_eda:
     st.image(
         str(FIGURES / "fig7_correlaciones.png"),
         caption="Matriz de correlaciones entre variables",
-        use_container_width=True,
+        width=700,
     )
     st.caption(
         "La edad correlaciona negativamente con la fuerza (r = -0.33) y positivamente "
@@ -169,7 +169,7 @@ with tab_eda:
     st.image(
         str(FIGURES / "fig11_escalabilidad_spark.png"),
         caption="Escalabilidad del procesamiento en Spark",
-        use_container_width=True,
+        width=700,
     )
     st.caption(
         "El tiempo de lectura se mantiene casi constante entre escalas gracias a la "
