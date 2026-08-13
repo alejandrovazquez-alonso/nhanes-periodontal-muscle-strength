@@ -1,0 +1,35 @@
+{
+  "formula": "fuerza_prension ~ C(periodontitis) + edad + C(sexo) + imc",
+  "n": 3389,
+  "r_squared": 0.655,
+  "intercept": {
+    "coef": 101.3910,
+    "std_err": 1.418,
+    "p_value": 0.000
+  },
+  "periodontitis": {
+    "categoria_referencia": "moderada",
+    "niveles": {
+      "moderada": {"coef": 0.0, "nota": "categoria de referencia"},
+      "sin_leve": {"coef": 3.1851, "std_err": 0.542, "p_value": 0.000},
+      "severa": {"coef": -0.3461, "std_err": 1.097, "p_value": 0.753, "nota": "no significativo"}
+    }
+  },
+  "sexo": {
+    "categoria_referencia": "hombre",
+    "niveles": {
+      "hombre": {"coef": 0.0, "nota": "categoria de referencia"},
+      "mujer": {"coef": -33.0577, "std_err": 0.458, "p_value": 0.000}
+    }
+  },
+  "edad": {
+    "coef_por_anio": -0.5018,
+    "std_err": 0.016,
+    "p_value": 0.000
+  },
+  "imc": {
+    "coef_por_unidad": 0.3660,
+    "std_err": 0.032,
+    "p_value": 0.000
+  }
+}
